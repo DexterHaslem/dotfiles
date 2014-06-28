@@ -13,7 +13,7 @@
  '(default ((t (:inherit nil :stipple nil :background "#242424" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 143 :width normal :foundry "outline" :family "Consolas")))))
 
 ; OTP 17.1 x64
-(setq load-path (cons "C:/Program Files/erl6.1/lib/tools-2.6.14/emacs" load-path))
+(setq load-path (cons "C:/Program Files/erl6.1/lib/tools-2.6.15/emacs" load-path))
 (setq erlang-root-dir "C:/Program Files/erl6.1")
 (setq exec-path (cons "C:/Program Files/erl6.1/bin" exec-path))
 (require 'erlang-start)
