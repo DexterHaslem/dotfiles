@@ -30,3 +30,8 @@
 (require 'slime-autoloads)
 (add-hook 'lisp-mode-hook (lambda () (slime-mode t)))
 (add-hook 'inferior-lisp-mode-hook (lambda () (inferior-slime-mode t)))
+
+
+; disable splash screen and crap
+(setq inhibit-splash-screen t)
+(setq inhibit-startup-message t)
