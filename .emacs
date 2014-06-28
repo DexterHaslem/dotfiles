@@ -17,16 +17,12 @@
 (setq exec-path (cons "C:/Program Files (x86)/erl6.0/bin" exec-path))
 (require 'erlang-start)
 
-;;(require 'package)
-;;(add-to-list 'package-archives
-;;  '("melpa" . "http://melpa.milkbox.net/packages/") t)
-
 (setq-default tab-width 4)
 (setq-default c-basic-offset 4)
 
 ;;(setq inferior-lisp-program "C:/Program Files (x86)/Steel Bank Common Lisp/1.1.12/sbcl.exe")-	debug
 (setq inferior-lisp-program "sbcl")
-(add-to-list 'load-path "C:/slime-2.7")
+(add-to-list 'load-path "C:/lisp/slime-2.7")
 (require 'slime)
 (slime-setup)
 
