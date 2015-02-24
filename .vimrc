@@ -1,3 +1,8 @@
+
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
 set nocompatible
 set shiftwidth=4
 set tabstop=4
@@ -13,7 +18,7 @@ set ruler
 set number
 set background=dark
 colorscheme solarized
-
+set cursorline
 set gfn=Consolas:h11:cANSI
 set backspace=indent,eol,start
 set guioptions-=m "menu bar
@@ -21,13 +26,13 @@ set guioptions-=T "toolbar
 set guioptions-=r "scrollbar
 set noswapfile
 set columns=85
-set foldmethod=syntax
-set foldlevelstart=14
-let xml_syntax_folding=1
-
 set cmdheight=1
 set hidden
 
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+set laststatus=2
+let g:airline#extensions#tabline#enabled = 1
