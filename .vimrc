@@ -19,13 +19,13 @@ set number
 set background=dark
 colorscheme solarized
 set cursorline
-set gfn=Consolas:h11:cANSI
+set gfn=Consolas:h10:cANSI
 set backspace=indent,eol,start
 set guioptions-=m "menu bar
 set guioptions-=T "toolbar
 set guioptions-=r "scrollbar
 set noswapfile
-set columns=85
+set columns=110
 set cmdheight=1
 set hidden
 
