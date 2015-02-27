@@ -27,12 +27,18 @@ set guioptions-=r "scrollbar
 set noswapfile
 set columns=110
 set cmdheight=1
-set hidden
+" set hidden
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
+set laststatus=2 "fixes airline going missing until a split is created
+
+" for omnisharp
+" set noshowmatch 
+" let g:syntastic_cs_checkers = [ 'syntax', 'semantic', 'issues' ]
+" set updatetime=300
+
