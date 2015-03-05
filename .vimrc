@@ -1,9 +1,9 @@
+set nocompatible
 
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-set nocompatible
 set shiftwidth=4
 set tabstop=4
 set expandtab
@@ -17,11 +17,12 @@ set hidden
 set ruler
 set number
 set background=dark
+let g:solarized_termcolors=256 
 colorscheme solarized
 set cursorline
 set gfn=Consolas:h10:cANSI
 set backspace=indent,eol,start
-set guioptions-=m "menu bar
+"set guioptions-=m "menu bar
 set guioptions-=T "toolbar
 set guioptions-=r "scrollbar
 set noswapfile
@@ -42,3 +43,5 @@ set laststatus=2 "fixes airline going missing until a split is created
 " let g:syntastic_cs_checkers = [ 'syntax', 'semantic', 'issues' ]
 " set updatetime=300
 
+"let g:slimv_swank_cmd = '! gnome-terminal -e "/home/dmh/ccl/lx86cl64 -l ~/slime/start-swank.lisp &"'
+let g:slimv_impl="sbcl"
