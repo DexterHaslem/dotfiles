@@ -39,3 +39,5 @@ let g:airline#extensions#tabline#enabled = 1
 set laststatus=2 "fixes airline going missing until a split is created
 let g:slimv_impl="clisp"
 let g:slimv_swank_cmd = '!start clisp -i "C:\lisp\slime\start-swank.lisp"'
+let g:slimv_preferred="clisp"
+let g:paredit_mode = 0
