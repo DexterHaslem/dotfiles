@@ -1,5 +1,18 @@
 (set-language-environment "utf-8")
 
+;; woopee im from not the 80s
+;; this doesnt work. 
+;;(line-number-mode 1)
+
+;; all buffers sure
+;;(global-linum-mode t)
+
+(add-hook 'lisp-mode-hook
+	  ;; might be better way to do this
+	  (lambda ()
+	    (linum-mode 1)))
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
