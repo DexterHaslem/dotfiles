@@ -16,9 +16,11 @@
  '(default ((t (:inherit nil :stipple nil :background "#242424" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "outline" :family "Consolas")))))
 
 ;; clozure cl winx64
-(setq inferior-lisp-program "wx86cl64")
-;;(load (expand-file-name "~/quicklisp/slime-helper.el"))
-(add-to-list 'load-path "C:/lisp/slime-2.15/")
+;;(setq inferior-lisp-program "wx86cl64")
+(setq inferior-lisp-program "sbcl")
+;;(load (expand-file-name "C:/lisp/quicklisp/slime-helper.el"))
+(load (expand-file-name "~/quicklisp/slime-helper.el"))
+;;(add-to-list 'load-path "C:/lisp/slime-2.15/")
 (require 'slime)
 (add-hook 'lisp-mode-hook (lambda () (slime-mode t)))
 (add-hook 'inferior-lisp-mode-hook (lambda () (inferior-slime-mode t)))
@@ -41,3 +43,5 @@
 (autoload 'ghc-init "ghc" nil t)
 (autoload 'ghc-debug "ghc" nil t)
 (add-hook 'haskell-mode-hook (lambda () (ghc-init)))
+(require 'evil)
+(evil-mode 1)
