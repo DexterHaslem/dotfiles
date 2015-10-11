@@ -7,6 +7,15 @@
 ;; this doesnt work. 
 ;;(line-number-mode 1)
 
+;; make yes/no less annoying
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+;; turn off initial scratch buffer message
+(setq initial-scratch-message "")
+
+;; enable paren-matching
+(show-paren-mode t)
+
 ;; all buffers sure
 ;;(global-linum-mode t)
 
