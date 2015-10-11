@@ -1,6 +1,9 @@
 (set-language-environment "utf-8")
 
+;; disable autosave and backups
 ;; woopee im from not the 80s
+(setq backup-inhibited t)
+(setq auto-save-default nil)
 ;; this doesnt work. 
 ;;(line-number-mode 1)
 
@@ -11,7 +14,6 @@
 	  ;; might be better way to do this
 	  (lambda ()
 	    (linum-mode 1)))
-
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
