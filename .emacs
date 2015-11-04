@@ -47,9 +47,9 @@
 (add-hook 'inferior-lisp-mode-hook (lambda () (inferior-slime-mode t)))
 
 ;; clozure cl winx64
-;;(setq inferior-lisp-program "wx86cl64")
+(setq inferior-lisp-program "wx86cl64")
 
-(setq inferior-lisp-program "sbcl")
+;;(setq inferior-lisp-program "sbcl")
 
 ; disable splash screen and crap
 (setq inhibit-splash-screen t)
