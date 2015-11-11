@@ -30,14 +30,8 @@ set columns=110
 set cmdheight=1
 " set hidden
 
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
 
-let g:airline#extensions#tabline#enabled = 1
-set laststatus=2 "fixes airline going missing until a split is created
-let g:slimv_impl="clisp"
-let g:slimv_swank_cmd = '!start clisp -i "C:\lisp\slime\start-swank.lisp"'
+let g:slimv_impl="wx86cl"
+let g:slimv_swank_cmd = '!start wx86cl -l "D:\lisp\slime-2.15\start-swank.lisp"'
 let g:slimv_preferred="clisp"
 let g:paredit_mode = 0
