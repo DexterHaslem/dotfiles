@@ -19,6 +19,10 @@ set number
 set background=dark
 "let g:solarized_termcolors=256 
 colorscheme murphy
+
+" oh my HELL this was somehow defaulted to white on MAGENTA
+highlight Pmenu guibg=brown gui=bold
+
 set cursorline
 set gfn=Consolas:h12:cANSI
 set backspace=indent,eol,start
@@ -30,8 +34,13 @@ set columns=110
 set cmdheight=1
 " set hidden
 
-
-let g:slimv_impl="wx86cl"
-let g:slimv_swank_cmd = '!start wx86cl -l "D:\lisp\slime-2.15\start-swank.lisp"'
-let g:slimv_preferred="clisp"
+"let g:slimv_impl="wx86cl64"
+"let g:slimv_swank_cmd = '!start wx86cl64 -l "D:\lisp\slime-2.15\start-swank.lisp"'
+"let g:slimv_preferred="wx86cl64"
+"
+let g:slimv_impl="sbcl"
+let g:slimv_swank_cmd = '!start sbcl --load "D:\lisp\slime-2.15\start-swank.lisp"'
+let g:slimv_preferred="sbcl"
 let g:paredit_mode = 0
+let g:lisp_rainbow = 1
+
