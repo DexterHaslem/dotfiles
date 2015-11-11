@@ -40,16 +40,17 @@
  '(default ((t (:inherit nil :stipple nil :background "#242424" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "outline" :family "Consolas")))))
 
  ;; installed slime via MELPA
-(add-to-list 'load-path "D:/lisp/slime-2.15/")
+;; (add-to-list 'load-path "D:/lisp/slime-2.15/")
+(add-to-list 'load-path "~/lisp/slime/")
 (require 'slime-autoloads)
 (setq slime-contribs '(slime-fancy)) ; almost everything
 (add-hook 'lisp-mode-hook (lambda () (slime-mode t)))
 (add-hook 'inferior-lisp-mode-hook (lambda () (inferior-slime-mode t)))
 
 ;; clozure cl winx64
-(setq inferior-lisp-program "wx86cl64")
+;; (setq inferior-lisp-program "wx86cl64")
 
-;;(setq inferior-lisp-program "sbcl")
+(setq inferior-lisp-program "sbcl")
 
 ; disable splash screen and crap
 (setq inhibit-splash-screen t)
@@ -63,12 +64,6 @@
    t)
   (package-initialize))
 
-(require 'package)
-(add-hook 'haskell-mode-hook 'haskell-indentation-mode)
-
-(autoload 'ghc-init "ghc" nil t)
-(autoload 'ghc-debug "ghc" nil t)
-(add-hook 'haskell-mode-hook (lambda () (ghc-init)))
 (require 'evil)
 (evil-mode 1)
 
