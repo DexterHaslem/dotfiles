@@ -74,7 +74,7 @@
 
 
 ;; lets use something with decent tooling woopieee
-(setq load-path (cons "D:/erl7.1/lib/tools-2.8.1/emacs" load-path))
-(setq erlang-root-dir "D:/erl7.1")
-(setq exec-path (cons "D:/erl7.1/bin" exec-path))
-(require 'erlang-start)
+;;(setq load-path (cons "D:/erl7.1/lib/tools-2.8.1/emacs" load-path))
+;;(setq erlang-root-dir "D:/erl7.1")
+;;(setq exec-path (cons "D:/erl7.1/bin" exec-path))
+;;(require 'erlang-start)
