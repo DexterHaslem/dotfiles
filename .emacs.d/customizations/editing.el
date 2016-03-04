@@ -74,12 +74,6 @@
 (require 'evil)
 (evil-mode 1)
 
-;; sucky fix for evil mode tab levels to each mode
-(add-hook 'js-mode-hook
-    (function 
-     (lambda () 
-       (setq evil-shift-width js-indent))))
-
 ;; ctrl-j for autoindent sucks, lets do automatically, 
 ;; should work for most modes
 (define-key global-map (kbd "RET") 'newline-and-indent)
