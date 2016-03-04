@@ -1,0 +1,46 @@
+"*":
+  "atom-beautify":
+    _analyticsUserId: "950ec101-9d8d-45cd-9068-5118ec61db00"
+  "bracket-matcher":
+    autocompleteBrackets: false
+    autocompleteSmartQuotes: false
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "vue-format"
+      "tortoise-svn"
+      "minimap-git-diff"
+      "merge-conflicts"
+      "language-vue"
+      "git-control"
+      "atom-beautify"
+    ]
+  editor:
+    fontFamily: "Consolas"
+    fontSize: 18
+    invisibles: {}
+    scrollSensitivity: 50
+    tabLength: 4
+    zoomFontWhenCtrlScrolling: false
+  "exception-reporting":
+    userId: "7a22cf8a-0ae5-857f-1991-c708bc780251"
+  jshint:
+    supportLintingJsx: true
+  "language-babel":
+    allowLocalOverride: true
+    autoIndentJSX: true
+    createMap: true
+    disableWhenNoBabelrcFileInPath: false
+  linter:
+    errorPanelHeight: 26
+    gutterPosition: "Left"
+    ignoreVCSIgnoredFiles: false
+    inlineTooltipInterval: 75
+    lintOnFlyInterval: 200
+  "linter-eslint": {}
+  minimap:
+    plugins:
+      "git-diff": false
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
