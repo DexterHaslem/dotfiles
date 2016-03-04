@@ -7,6 +7,9 @@
 ;; Turn off the menu bar at the top of each frame because it's distracting
 (menu-bar-mode -1)
 
+;; same for tool bar
+(tool-bar-mode -1)
+
 ;; Show line numbers
 (global-linum-mode)
 
@@ -15,9 +18,11 @@
 ;; (when (fboundp 'tool-bar-mode)
 ;;   (tool-bar-mode -1))
 
+
 ;; Don't show native OS scroll bars for buffers because they're redundant
-(when (fboundp 'scroll-bar-mode)
-  (scroll-bar-mode -1))
+;; not redundant on windows
+;;(when (fboundp 'scroll-bar-mode) 
+;;(scroll-bar-mode -1))
 
 ;; Color Themes
 ;; Read http://batsov.com/articles/2012/02/19/color-theming-in-emacs-reloaded/
@@ -29,7 +34,7 @@
 (load-theme 'tomorrow-night-bright t)
 
 ;; increase font size for better readability
-(set-face-attribute 'default nil :height 140)
+(set-face-attribute 'default nil :height 142)
 
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
@@ -67,7 +72,3 @@
 
 ;; no bell
 (setq ring-bell-function 'ignore)
-
-;; setup neotree
-(require 'neotree)
-(global-set-key [f8] 'neotree-toggle)
