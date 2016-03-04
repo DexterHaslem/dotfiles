@@ -70,6 +70,9 @@
     
     ;; vim motions
     evil
+
+    ;; neotree
+    neotree
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user

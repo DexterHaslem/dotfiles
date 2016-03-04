@@ -67,3 +67,7 @@
 
 ;; no bell
 (setq ring-bell-function 'ignore)
+
+;; setup neotree
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
