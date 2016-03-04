@@ -43,7 +43,6 @@
                                                "backups"))))
 (setq auto-save-default nil)
 
-
 ;; comments
 (defun toggle-comment-on-line ()
   "comment or uncomment current line"
@@ -54,10 +53,10 @@
 ;; yay rainbows!
 (global-rainbow-delimiters-mode t)
 
-;; use 2 spaces for tabs
+;; use 4 spaces for tabs. im a rebel
 (defun die-tabs ()
   (interactive)
-  (set-variable 'tab-width 2)
+  (set-variable 'tab-width 4)
   (mark-whole-buffer)
   (untabify (region-beginning) (region-end))
   (keyboard-quit))
@@ -77,5 +76,6 @@
 
 ;; sucky fix for evil mode tab levels to each mode
 (add-hook 'js-mode-hook
-          (function (lambda () 
-                      (setq evil-shift-width js-indent))))
+    (function 
+     (lambda () 
+       (setq evil-shift-width js-indent))))

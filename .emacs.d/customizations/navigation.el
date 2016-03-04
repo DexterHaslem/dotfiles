@@ -63,3 +63,15 @@
 ;; setup neotree
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
+;; everytime window opened, jump to current file node
+(setq neo-smart-open t)
+;; let projectile move neotree root
+(setq projectile-switch-project-action 'neotree-projectile-action)
+
+;; evil is used, so fix neotree bindngs
+(add-hook 'neotree-mode-hook
+    (lambda ()
+      (define-key evil-normal-state-local-map (kbd "TAB") 'neotree-enter)
+      (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-enter)
+      (define-key evil-normal-state-local-map (kbd "q") 'neotree-hide)
+      (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)))
