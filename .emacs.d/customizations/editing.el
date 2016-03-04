@@ -79,3 +79,7 @@
     (function 
      (lambda () 
        (setq evil-shift-width js-indent))))
+
+;; ctrl-j for autoindent sucks, lets do automatically, 
+;; should work for most modes
+(define-key global-map (kbd "RET") 'newline-and-indent)
