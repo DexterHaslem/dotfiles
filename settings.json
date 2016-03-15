@@ -1,0 +1,9 @@
+// vs code settings
+{
+    "editor.fontFamily": "Consolas",
+    "editor.fontSize": 18,
+    "eslint.enable": true,
+    "files.trimTrailingWhitespace": true,
+    // ms products :))
+    "telemetry.enableTelemetry": false
+}
