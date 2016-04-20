@@ -1,1 +1,0 @@
-(define-package "flycheck-typescript-tslint" "20160404.30" "Typescript tslint error checker" '((flycheck "0.22") (emacs "24")) :url "https://github.com/Simplify/flycheck-typescript-tslint/" :keywords '("flycheck" "typescript" "tslint"))

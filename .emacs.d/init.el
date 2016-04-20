@@ -36,14 +36,14 @@
 
     ;; key bindings and code colorization for Clojure
     ;; https://github.com/clojure-emacs/clojure-mode
-    ;; clojure-mode
+    clojure-mode
 
     ;; extra syntax highlighting for clojure
-    ;; clojure-mode-extra-font-locking
+    clojure-mode-extra-font-locking
 
     ;; integration with a Clojure REPL
     ;; https://github.com/clojure-emacs/cider
-    ;; cider
+    cider
 
     ;; allow ido usage in as many contexts as possible. see
     ;; customizations/navigation.el line 23 for a description
@@ -63,25 +63,17 @@
 
     ;; edit html tags like sexps
     tagedit
-
-    ;; git integration
-    ;; magit
     
     ;; vim motions
     evil
 
-    ;; neotree
+	;;web-mode
+	
     neotree
-
-    ;; webmode for jsx and templates
-    web-mode
-
-    ;; tide typescript
-    tide
-
-    flycheck
-
-    malabar-mode
+	
+	;;slime
+    neotree
+	;;ac-slime
 ))
 
 (dolist (p my-packages)
@@ -101,7 +93,6 @@
 ;; Adding this code will make Emacs enter yaml mode whenever you open
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
-
 
 ;;;;
 ;; Customization
@@ -132,7 +123,8 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
-;; Langauage-specific
-;; (load "setup-clojure.el")
-(load "setup-js.el")
-(load "setup-ts.el")
+;; Language-specific
+(load "setup-clojure.el")
+;;(load "setup-cl.el")
+;;(load "setup-js.el")
+;;(load "setup-ts.el")
