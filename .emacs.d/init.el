@@ -4,12 +4,16 @@
 
 ;; Define package repositories
 (require 'package)
+;;(add-to-list 'package-archives
+;;             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+;;(add-to-list 'package-archives
+;;             '("tromey" . "http://tromey.com/elpa/") t)
 (add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
-(add-to-list 'package-archives
-             '("tromey" . "http://tromey.com/elpa/") t)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+             '("melpa" . "http://stable.melpa.org/packages/"))
+
+;;(add-to-list 'package-archives
+;;             '("melpa" . "https://melpa.org/packages/"))
+
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
@@ -32,14 +36,14 @@
 
     ;; key bindings and code colorization for Clojure
     ;; https://github.com/clojure-emacs/clojure-mode
-    clojure-mode
+    ;; clojure-mode
 
     ;; extra syntax highlighting for clojure
-    clojure-mode-extra-font-locking
+    ;; clojure-mode-extra-font-locking
 
     ;; integration with a Clojure REPL
     ;; https://github.com/clojure-emacs/cider
-    cider
+    ;; cider
 
     ;; allow ido usage in as many contexts as possible. see
     ;; customizations/navigation.el line 23 for a description
@@ -61,7 +65,7 @@
     tagedit
 
     ;; git integration
-    magit
+    ;; magit
     
     ;; vim motions
     evil
@@ -71,6 +75,13 @@
 
     ;; webmode for jsx and templates
     web-mode
+
+    ;; tide typescript
+    ;; tide
+
+    ;;flycheck
+
+    ;;autopair
 ))
 
 (dolist (p my-packages)
@@ -124,3 +135,4 @@
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
+(load "setup-ts.el")

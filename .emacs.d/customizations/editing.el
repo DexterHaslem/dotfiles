@@ -68,12 +68,12 @@
       (ns-get-selection-internal 'CLIPBOARD)
     (quit nil)))
 
-(setq electric-indent-mode nil)
+;;(setq electric-indent-mode nil)
 
 ;; enable evil vim mode
 (require 'evil)
 (evil-mode 1)
 
 ;; ctrl-j for autoindent sucks, lets do automatically, 
-;; should work for most modes
+;; should work for most modes. how stupid we have to add this in 2016
 (define-key global-map (kbd "RET") 'newline-and-indent)
