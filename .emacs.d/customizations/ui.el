@@ -33,7 +33,9 @@
 (load-theme 'tomorrow-night-bright t)
 
 ;; increase font size for better readability
-(set-face-attribute 'default nil :height 138)
+(set-face-attribute 'default nil :height 140)
+(add-to-list 'default-frame-alist '(font . "Consolas-14" ))
+(set-face-attribute 'default t :font "Consolas-14" )
 
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height

@@ -4,6 +4,10 @@
 ;; http://www.emacswiki.org/emacs/HippieExpand
 (global-set-key (kbd "M-/") 'hippie-expand)
 
+;; aahhh random modes being in 8 can freak off
+(setq-default tab-width 4)
+(setq-default indent-tabs-mode t)
+
 ;; Lisp-friendly hippie expand
 (setq hippie-expand-try-functions-list
       '(try-expand-dabbrev
