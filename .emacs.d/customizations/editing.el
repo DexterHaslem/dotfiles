@@ -50,8 +50,10 @@
   (comment-or-uncomment-region (line-beginning-position) (line-end-position)))
 (global-set-key (kbd "C-;") 'toggle-comment-on-line)
 
-;; yay rainbows!
-(global-rainbow-delimiters-mode t)
+;; yay rainbows! global randomly broke, very nice. 
+;; emacs wiki has a causal broken html 1 liner about it
+;; (global-rainbow-delimiters-mode t)
+(rainbow-delimiters-mode)
 
 ;; use 4 spaces for tabs. im a rebel
 (defun die-tabs ()

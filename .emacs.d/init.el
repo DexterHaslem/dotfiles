@@ -9,10 +9,10 @@
 ;;(add-to-list 'package-archives
 ;;             '("tromey" . "http://tromey.com/elpa/") t)
 (add-to-list 'package-archives
-             '("melpa" . "http://stable.melpa.org/packages/"))
+             '("melpa" . "http://melpa.org/packages/"))
 
 ;;(add-to-list 'package-archives
-;;             '("melpa" . "https://melpa.org/packages/"))
+;;             '("melpa" . "http://stable.melpa.org/packages/"))
 
 
 ;; Load and activate emacs packages. Do this first so that the
@@ -59,7 +59,7 @@
     projectile
 
     ;; colorful parenthesis matching
-    rainbow-delimiters
+    ;; rainbow-delimiters
 
     ;; edit html tags like sexps
     tagedit
@@ -77,11 +77,11 @@
     web-mode
 
     ;; tide typescript
-    ;; tide
+    tide
 
-    ;;flycheck
+    flycheck
 
-    ;;autopair
+    malabar-mode
 ))
 
 (dolist (p my-packages)
@@ -133,6 +133,6 @@
 (load "elisp-editing.el")
 
 ;; Langauage-specific
-(load "setup-clojure.el")
+;; (load "setup-clojure.el")
 (load "setup-js.el")
 (load "setup-ts.el")

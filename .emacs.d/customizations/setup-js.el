@@ -16,7 +16,6 @@
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
 
-
 ;; coffeescript
 (add-to-list 'auto-mode-alist '("\\.coffee.erb$" . coffee-mode))
 (add-hook 'coffee-mode-hook 'subword-mode)
@@ -27,3 +26,6 @@
             (setq coffee-cleanup-whitespace nil)))
 (custom-set-variables
  '(coffee-tab-width 4))
+
+ 
+(add-hook 'js-mode-hook 'rainbow-delimiters-mode)

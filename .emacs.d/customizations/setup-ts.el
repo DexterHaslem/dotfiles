@@ -11,6 +11,9 @@
 ;; aligns annotation to the right hand side
 (setq company-tooltip-align-annotations t)
 
+;; i use 4 space tab for js/ts mode. dont tell github
+(setq js-indent-level 4)
+
 ;; Tide can be used along with web-mode to edit tsx files
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
