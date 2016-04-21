@@ -22,6 +22,9 @@
       "vim-mode"
       "vim-mode-plus-ex-mode"
       "vim-modeline"
+      "vim-mode-plus"
+      "vim-mode-plus-move-selected-text"
+      "vim-mode-plus-move-to-symbols"
     ]
     packagesWithKeymapsDisabled: [
       "language-python"
@@ -60,6 +63,8 @@
   minimap:
     plugins:
       "git-diff": false
+  "proto-repl":
+    leinPath: "C:\\Users\\Dexter\\.lein\\bin\\lein.bat"
   "tree-view": {}
   welcome:
     showOnStartup: false
