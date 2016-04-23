@@ -89,6 +89,15 @@
 ;; but QL installs to users root. stupid
 (load "C:/Users/Dexter/quicklisp/slime-helper.el")
 
+;; NOTE about getting ql going:
+;;$ wget http://beta.quicklisp.org/quicklisp.lisp
+;;$ sbcl --load ./quicklisp.lisp
+;;* (quicklisp-quickstart:install)
+;;* (ql:add-to-init-file)
+;;* (ql:quickload "quicklisp-slime-helper")
+;;* (quit)
+;;(load (expand-file-name "~/quicklisp/slime-helper.el"))
+
 ;; aahhh random modes being in 8 can freak off
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode t)
@@ -102,7 +111,6 @@
 
 (require 'evil)
 (evil-mode 1)
-
 
 ;; navigation 
 
