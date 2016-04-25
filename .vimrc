@@ -1,7 +1,7 @@
 set nocompatible
 "set term=xterm=256color
 
-execute pathogen#infect()
+"execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
@@ -40,14 +40,15 @@ set cmdheight=1
 "let g:slimv_preferred="wx86cl64"
 "
 
-let g:slimv_impl="sbcl"
-let g:slimv_preferred="sbcl"
+"let g:slimv_impl="sbcl"
+"let g:slimv_preferred="sbcl"
 
-if has("win32")
-let g:slimv_swank_cmd = '!start sbcl --load "D:\lisp\slime-2.15\start-swank.lisp"'
-elseif has("unix")
+"if has("win32")
+"let g:slimv_swank_cmd = '!start sbcl --load "D:\lisp\slime-2.15\start-swank.lisp"'
+"elseif has("unix")
 "unix
-let g:slimv_swank_cmd = '!start sbcl --load "~/lisp/slime/start-swank.lisp"'
-endif
-let g:paredit_mode = 0
-let g:lisp_rainbow = 1
+"let g:slimv_swank_cmd = '!start sbcl --load "~/lisp/slime/start-swank.lisp"'
+"endif
+
+"let g:paredit_mode = 0
+"let g:lisp_rainbow = 1
