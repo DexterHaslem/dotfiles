@@ -52,3 +52,5 @@ set cmdheight=1
 
 "let g:paredit_mode = 0
 "let g:lisp_rainbow = 1
+
+set nowrap
