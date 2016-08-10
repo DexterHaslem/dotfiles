@@ -1,17 +1,11 @@
-// vs code settings
 {
     "editor.fontFamily": "Consolas",
     "editor.fontSize": 22,
-	"editor.lineHeight": 22,
+    "editor.lineHeight": 22,
     "eslint.enable": true,
     "files.trimTrailingWhitespace": true,
-    // ms products :))
     "telemetry.enableTelemetry": false,
-
     "python.linting.enabled": false,
-    // Controls the rendering size of tabs in characters. Accepted values: "auto", 2, 4, 6, etc. If set to "auto", the value will be guessed when a file is opened.
-	"editor.tabSize": 4,
-
-	// Controls if the editor will insert spaces for tabs. Accepted values:  "auto", true, false. If set to "auto", the value will be guessed when a file is opened.
-	"editor.insertSpaces": false
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false
 }
