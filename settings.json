@@ -4,6 +4,7 @@
     "editor.lineHeight": 22,
     "eslint.enable": true,
     "files.trimTrailingWhitespace": true,
+    "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "python.linting.enabled": false,
     "editor.tabSize": 4,
