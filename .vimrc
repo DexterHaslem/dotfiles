@@ -31,9 +31,9 @@ execute pathogen#infect()
 syntax enable
 filetype plugin indent on
 
-set background=dark
-colorscheme solarized
-let g:solarized_termcolors=256
+" set background=dark
+colorscheme delek
+" let g:solarized_termcolors=256
 
 nmap <silent> <leader>t :NerdTreeToggle<CR>
 
