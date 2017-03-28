@@ -1,13 +1,51 @@
 {
-    "editor.fontFamily": "Consolas",
-    "editor.fontSize": 22,
-    "editor.lineHeight": 22,
+    "editor.fontFamily": "'monospace'",
+    "editor.fontSize": 18,
+    "editor.lineHeight": 18,
+
     "eslint.enable": true,
-    "files.trimTrailingWhitespace": true,
+    "tslint.enable": false,
+
+
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+
     "python.linting.enabled": false,
     "editor.tabSize": 4,
     "editor.insertSpaces": false,
-    "vim.useCtrlKeys": false
+    "vim.useCtrlKeys": false,
+
+    "editor.minimap.enabled": true,
+    "editor.minimap.maxColumn": 100,
+    "editor.quickSuggestionsDelay": 50,
+    "editor.autoClosingBrackets": false,
+    "editor.selectionHighlight": false,
+    "editor.cursorBlinking": "blink",
+    "editor.cursorStyle": "underline",
+    "editor.folding": false,
+
+    "window.zoomLevel": 1,
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}",
+    "window.menuBarVisibility": "toggle",
+
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+
+    "explorer.openEditors.visible": 4,
+    // verdict is out on this one
+    "explorer.autoReveal": false,
+
+    "git.autorefresh": false,
+    "git.autofetch": false,
+
+    "extensions.autoUpdate": true,
+
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.scrollback": 2048,
+
+    "go.vetFlags": [
+        "-all"
+    ],
+
+    "ocaml.replFocus": true
 }
