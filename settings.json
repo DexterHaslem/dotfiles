@@ -14,7 +14,7 @@
     "editor.insertSpaces": false,
     "vim.useCtrlKeys": false,
 
-    "editor.minimap.enabled": true,
+    "editor.minimap.enabled": false,
     "editor.minimap.maxColumn": 100,
     "editor.quickSuggestionsDelay": 50,
     "editor.autoClosingBrackets": false,
