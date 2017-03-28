@@ -8,5 +8,6 @@
     "telemetry.enableTelemetry": false,
     "python.linting.enabled": false,
     "editor.tabSize": 4,
-    "editor.insertSpaces": false
+    "editor.insertSpaces": false,
+    "vim.useCtrlKeys": false
 }
