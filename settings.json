@@ -1,11 +1,9 @@
 {
-    "editor.fontFamily": "'monospace'",
     "editor.fontSize": 18,
     "editor.lineHeight": 18,
 
     "eslint.enable": true,
     "tslint.enable": false,
-
 
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
