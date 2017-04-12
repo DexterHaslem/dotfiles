@@ -39,7 +39,7 @@
 (tool-bar-mode -1)
 
 ;; Show line numbers
-(global-linum-mode)
+(global-linum-mode 1)
 
 ;; No cursor blinking, it's distracting
 (blink-cursor-mode 0)
@@ -173,3 +173,8 @@
             (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-enter)
             (define-key evil-normal-state-local-map (kbd "q") 'neotree-hide)
             (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)))
+(ido-mode 1)
+(setq ido-enable-flex-matching t)
+
+;; auto-indent on newline
+(define-key global-map (kbd "RET") 'newline-and-indent)
