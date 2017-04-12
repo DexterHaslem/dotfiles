@@ -87,7 +87,7 @@
 ;;(setq inferior-lisp-program "wx86cl64")
 ;; (load (expand-file-name "~/quicklisp/slime-helper.el"))
 ;; but QL installs to users root. stupid
-(load "C:/Users/Dexter/quicklisp/slime-helper.el")
+;; (load "C:/Users/Dexter/quicklisp/slime-helper.el")
 
 ;; NOTE about getting ql going:
 ;;$ wget http://beta.quicklisp.org/quicklisp.lisp
