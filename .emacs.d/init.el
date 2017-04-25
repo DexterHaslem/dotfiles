@@ -107,7 +107,7 @@
 ;; Highlight current line
 (global-hl-line-mode 1)
   
-(rainbow-delimiters-mode)
+(rainbow-delimiters-mode t)
 
 (require 'evil)
 (evil-mode 1)
@@ -160,6 +160,7 @@
 
 ;; setup neotree
 (require 'neotree)
+
 (global-set-key [f8] 'neotree-toggle)
 ;; everytime window opened, jump to current file node
 (setq neo-smart-open t)
@@ -175,6 +176,9 @@
             (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)))
 (ido-mode 1)
 (setq ido-enable-flex-matching t)
+
+;; neotree sizing sucks
+;; (setq neo-window-fixed-size 110)
 
 ;; auto-indent on newline
 (define-key global-map (kbd "RET") 'newline-and-indent)
