@@ -1,5 +1,6 @@
 {
-    "editor.fontFamily":  "Consolas,'Droid Sans Mono', monospace",
+    "editor.fontFamily": "'Fira Code', monospace",
+    "editor.fontLigatures": true,
     "editor.fontSize": 18,
     "editor.lineHeight": 18,
 
@@ -21,7 +22,7 @@
     "editor.selectionHighlight": false,
     "editor.cursorBlinking": "blink",
     "editor.cursorStyle": "underline",
-    "editor.folding": false,
+    "editor.folding": true,
 
     "window.zoomLevel": 1,
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}",
@@ -30,8 +31,7 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
 
-    "explorer.openEditors.visible": 4,
-    // verdict is out on this one
+    "explorer.openEditors.visible": 8,
     "explorer.autoReveal": false,
 
     "git.autorefresh": false,
