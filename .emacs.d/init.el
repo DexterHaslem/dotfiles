@@ -18,9 +18,7 @@
     rainbow-delimiters
     evil	
     neotree
-	;; dont use package version of these, doesnt work right for some reason
-	;; quicklisp version is much better
-	;;slime
+    slime
 ))
 
 (dolist (p my-packages)
