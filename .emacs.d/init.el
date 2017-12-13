@@ -1,11 +1,7 @@
 (require 'package)
-;;(add-to-list 'package-archives
-;;            '("marmalade" . "http://marmalade-repo.org/packages/") t)
-(add-to-list 'package-archives
-             '("tromey" . "http://tromey.com/elpa/") t)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/"))
 
+(add-to-list 'package-archives
+	 '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 (package-initialize)
 
@@ -81,22 +77,10 @@
 (setq inhibit-startup-message t)
 (setq inhibit-splash-screen t)
 
-;; setup lisp, slime installed w/ quicklisp
+;; setup lisp, slime installed w/ MELPA
 ;; this is what docs say to do - it is wrong on windows ~ goes to appdata
 (setq inferior-lisp-program "sbcl")
-;;(setq inferior-lisp-program "wx86cl64")
-;; (load (expand-file-name "~/quicklisp/slime-helper.el"))
-;; but QL installs to users root. stupid
-;; (load "C:/Users/Dexter/quicklisp/slime-helper.el")
-
-;; NOTE about getting ql going:
-;;$ wget http://beta.quicklisp.org/quicklisp.lisp
-;;$ sbcl --load ./quicklisp.lisp
-;;* (quicklisp-quickstart:install)
-;;* (ql:add-to-init-file)
-;;* (ql:quickload "quicklisp-slime-helper")
-;;* (quit)
-;;(load (expand-file-name "~/quicklisp/slime-helper.el"))
+(setq slime-contribs '(slime-fancy))
 
 ;; aahhh random modes being in 8 can freak off
 (setq-default tab-width 4)
@@ -160,7 +144,6 @@
 
 ;; setup neotree
 (require 'neotree)
-
 (global-set-key [f8] 'neotree-toggle)
 ;; everytime window opened, jump to current file node
 (setq neo-smart-open t)
@@ -177,8 +160,21 @@
 (ido-mode 1)
 (setq ido-enable-flex-matching t)
 
-;; neotree sizing sucks
-;; (setq neo-window-fixed-size 110)
-
-;; auto-indent on newline
+(setq neo-window-fixed-size 200)
+(setq neo-modern-sidebar t)
+;; Auto-indent on newline
 (define-key global-map (kbd "RET") 'newline-and-indent)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+	(slime smex rainbow-delimiters projectile paredit neotree ido-ubiquitous evil))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
