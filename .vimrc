@@ -12,10 +12,8 @@ set hlsearch
 set hidden
 set ruler
 set number
-" oh my HELL this was somehow defaulted to white on MAGENTA
-highlight Pmenu guibg=brown gui=bold
 set cursorline
-set gfn=Consolas:h14:cANSI
+"set gfn=Consolas:h14:cANSI
 set backspace=indent,eol,start
 "set guioptions-=m "menu bar
 set guioptions-=T "toolbar
@@ -27,7 +25,7 @@ set nowrap
 set mouse=a
 
 " Pathogen and plugin setup
-execute pathogen#infect()
+"execute pathogen#infect()
 syntax enable
 filetype plugin indent on
 
@@ -35,7 +33,7 @@ filetype plugin indent on
 colorscheme delek
 " let g:solarized_termcolors=256
 
-nmap <silent> <leader>t :NerdTreeToggle<CR>
+"nmap <silent> <leader>t :NerdTreeToggle<CR>
 
 let g:nerdtree_tabs_open_on_console_startup = 1
 

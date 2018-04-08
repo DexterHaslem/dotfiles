@@ -1,8 +1,8 @@
 {
     "editor.fontFamily": "'Fira Code', monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 18,
-    "editor.lineHeight": 18,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 16,
 
     "eslint.enable": true,
     "tslint.enable": false,
@@ -31,7 +31,7 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
 
-    "explorer.openEditors.visible": 20,
+    "explorer.openEditors.visible": 10,
     "explorer.autoReveal": false,
 
     "git.autorefresh": false,
@@ -45,6 +45,4 @@
     "go.vetFlags": [
         "-all"
     ],
-
-    "ocaml.replFocus": true
 }
