@@ -13,9 +13,7 @@ set hidden
 set ruler
 set number
 set cursorline
-"set gfn=Consolas:h14:cANSI
 set backspace=indent,eol,start
-"set guioptions-=m "menu bar
 set guioptions-=T "toolbar
 set guioptions-=r "scrollbar
 set noswapfile
@@ -39,9 +37,9 @@ let g:nerdtree_tabs_open_on_console_startup = 1
 
 let g:syntastic_error_symbol = 'X'
 let g:syntastic_warning_symbol = 'W'
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:synatstic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
