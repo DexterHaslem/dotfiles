@@ -1,51 +1,33 @@
 set nocompatible
+
+set expandtab
+set smarttab
 set shiftwidth=4
 set tabstop=4
-set expandtab
-set softtabstop=4
-set showcmd
-set showmatch
+set autoindent
+
+
+set backspace=2
+
 set ignorecase
 set smartcase
-set incsearch
-set hlsearch
-set hidden
+
+set hlsearch 
+set showmatch
+
 set ruler
-set number
-set cursorline
-set backspace=indent,eol,start
-set guioptions-=T "toolbar
-set guioptions-=r "scrollbar
+set autoread
+
+set encoding=utf8
+
+set nowb
 set noswapfile
-set columns=110
-set cmdheight=1
-set nowrap
-set mouse=a
 
-" Pathogen and plugin setup
-"execute pathogen#infect()
-syntax enable
-filetype plugin indent on
+syntax on
+filetype indent on
+filetype plugin on
+set number
+set nobackup
 
-" set background=dark
-colorscheme delek
-" let g:solarized_termcolors=256
+colorscheme desert
 
-"nmap <silent> <leader>t :NerdTreeToggle<CR>
-
-let g:nerdtree_tabs_open_on_console_startup = 1
-
-let g:syntastic_error_symbol = 'X'
-let g:syntastic_warning_symbol = 'W'
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:synatstic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
-
-let g:javascript_enable_domhtmlcss = 1
-let g:jsx_ext_required = 0
-"let g:neocomplete#enable_at_startup = 1
